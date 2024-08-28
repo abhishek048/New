@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+.hero{
+    height: 500px;
+    width: 100%;
+    /* background-color: green; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    /* color: white; */
+}
+.hero h1{
+    font-size: 4vw;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    line-height: 1;
+}
+.hero p{
+    font-size: 1.5vw;
+}
+.search{
+    width: 500px;
+    height: 50px;
+    display: flex;
+    gap: 20px;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+.search i{
+    font-size: 30px;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+.search input{
+    height: 90%;
+    width: 80%;
+    outline: none;
+    border: none;
+    background-color: transparent;
+}
+.trending{
+    height: 50px;
+    width: 60%;
+    /* border: 1px solid balck; */
+    /* background-color: red; */
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.trending h3{
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+.trending a{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+    border: 1px solid #f2f2f2;
+    border-radius: 30px;
+    text-decoration: none;
+    color: black;
+}
+.trending a:hover{
+    border-color: #dadada;
+}
+.cardwrapper{
+    width: 100%;
+    display: flex;
+    gap: 15px;
+    overflow: hidden;
+    flex-wrap: wrap;
+}
+
+.card{
+   
+    position: relative;
+}
+.imgwrapper{
+    height: 300px;
+    width: 300px;
+    overflow: hidden;
+    border-radius: 20px;
+}
+.imgwrapper img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.hoverbox{
+    height: 40px;
+    width: 100%;
+    background-color: rgb(185, 18, 18);
+    position: absolute;
+    bottom: 0px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    /* display: none; */
+    opacity: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
+   
+}
+.card:hover .hoverbox{
+    /* display: block; */
+    /* transition: all ease 10s; */
+    opacity: 1;
+    background-color: #f2f2f2;
+    background: linear-gradient(#f2f2f2,white);
+}
+.grp11{
+    font-size: 30px;
+    /* color: #dadada; */
+}
+.grp12 i{
+    font-size: 30px;
+    padding: 10px;
+    /* background-color: white; */
+    border-radius: 50%;
+}
